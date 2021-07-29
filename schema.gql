@@ -1,0 +1,15 @@
+type Todo {
+  part: String!
+  device: String!
+  colour: String!
+  customer: String!
+  contactnumber: String!
+  daterequested: Date!
+  daterequired: Date!
+  paid: Boolean!
+  ordered: Boolean!
+}
+
+type Query {
+  allTodos: [Todo!]
+}
