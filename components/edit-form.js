@@ -266,7 +266,7 @@ const EditForm = ({ defaultValues, id }) => {
                     <input
                       id="ordered"
                       name="ordered"
-                      type="checkbox" type="checkbox" {...register('ordered')}
+                      type="checkbox" {...register('ordered')}
                       className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
                     />
                   </div>
