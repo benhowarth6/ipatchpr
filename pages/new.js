@@ -45,6 +45,10 @@ const New = () => {
     }
   });
 
+  var curr = new Date();
+  curr.setDate(curr.getDate() + 0);
+  var date = curr.toISOString().substr(0,10);
+
   return (
     <Layout>
        <header className="bg-white shadow">
@@ -183,13 +187,14 @@ const New = () => {
           <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
             <div className="sm:col-span-3">
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                Request Date (AUTO)
+                Request Date
               </label>
               <div className="mt-1">
                 <input
-                  type="text"
-                  name="name"
-                  id="name"
+                  type="date"
+                  name="date"
+                  id="date"
+                  defaultValue={date}
                   className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                   {...register('daterequested', { required: 'Date Requested is required' })}
                 />
