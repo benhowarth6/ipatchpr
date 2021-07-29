@@ -52,7 +52,7 @@ const Home = () => {
             <a className="block hover:bg-gray-50">
               <div className="px-4 py-4 sm:px-6">
                 <div className="flex items-center justify-between">
-                  <div class="flex text-sm">
+                  <div className="flex text-sm">
                   <p className="text-sm font-medium text-blue-600 truncate">{todo.part}</p>
                   <p className="ml-1 flex-shrink-0 font-normal text-gray-500">for a {todo.device}</p>
                   </div>
