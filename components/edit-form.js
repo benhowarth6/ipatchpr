@@ -197,13 +197,13 @@ const EditForm = ({ defaultValues, id }) => {
           <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
             <div className="sm:col-span-3">
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                Request Date (AUTO)
+                Request Date
               </label>
               <div className="mt-1">
                 <input
-                  type="text"
-                  name="name"
-                  id="name"
+                  type="date"
+                  name="date_request"
+                  id="date_request"
                   className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                   {...register('daterequested', { required: 'Date Requested is required' })}
                 />
@@ -221,9 +221,9 @@ const EditForm = ({ defaultValues, id }) => {
               </label>
               <div className="mt-1">
                 <input
-                  type="text"
-                  name="last_name"
-                  id="last_name"
+                  type="date"
+                  name="date_required"
+                  id="date_required"
                   className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                   {...register('daterequired', { required: 'Part required date is required' })}
                 />

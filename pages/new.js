@@ -192,8 +192,8 @@ const New = () => {
               <div className="mt-1">
                 <input
                   type="date"
-                  name="date"
-                  id="date"
+                  name="date_request"
+                  id="date_request"
                   defaultValue={date}
                   className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                   {...register('daterequested', { required: 'Date Requested is required' })}
@@ -212,9 +212,9 @@ const New = () => {
               </label>
               <div className="mt-1">
                 <input
-                  type="text"
-                  name="last_name"
-                  id="last_name"
+                  type="date"
+                  name="date_required"
+                  id="date_required"
                   className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                   {...register('daterequired', { required: 'Part required date is required' })}
                 />
